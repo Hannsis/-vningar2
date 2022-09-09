@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Namnsdag();
-          
+            NationellaProv();
+
         }
-        
-        static void Golf() 
+
+        static void Golf()
         {
             /*
             För att få delta i seniormästerskapen på en golfklubb måste man vara minst 50 år gammal. 
@@ -18,7 +18,7 @@
             Console.WriteLine("Hej och välkommen till den mest exklusiva golfklubb som finns! Hur gammal är du? (Ange i heltal): ");
             int age = int.Parse(Console.ReadLine());
 
-            if (age >= 50) 
+            if (age >= 50)
             {
                 Console.WriteLine("Du är välkommen att spela hos oss, för ett pris...");
             }
@@ -28,7 +28,7 @@
             }
         }
 
-        static void Världsmästerskapet() 
+        static void Världsmästerskapet()
         {
             /*
              Skapa ett program som frågar användaren vilket land som vann fotbolls-VM för damer år 2015. 
@@ -44,14 +44,14 @@
             {
                 Console.WriteLine("Du svarade rätt!");
             }
-            else 
+            else
             {
                 Console.WriteLine("Svaret var fel");
             }
 
         }
 
-        static void Namnsdag() 
+        static void Namnsdag()
         {
             /*
             Skapa ett program som frågar användaren vad hen heter. 
@@ -72,13 +72,66 @@
             {
                 Console.WriteLine("I morgon har du namnsdag! ");
             }
-            else 
+            else
             {
                 Console.WriteLine("Din namnsdag kommer, be patient!");
             }
         }
 
-        static void ÅlderMånadselön() 
+        static void NationellaProv()
+        {
+            /*
+            På det nationella provet i Matematik 4 våren 2013 så fanns följande poänggränser för olika provbetyg.
+
+            Provbetyg	Poänggräns
+                     A	55
+                     B	46
+                     C	35
+                     D	27
+                     E	18
+            Skapa ett program som frågar användaren hur många poäng hen fick på detta prov.   
+            Programmet ska säga vilket provbetyg användaren fick.
+             */
+            Console.WriteLine("Vad fick du för poäng på de nationella proven, från 0 till 100?");
+            int rättSvar = int.Parse(Console.ReadLine());
+
+            if (rättSvar < 18)
+            {
+                Console.WriteLine("F");
+
+            }
+            else if (rättSvar < 27)
+            {
+                Console.WriteLine("E");
+
+            }
+            else if (rättSvar < 35)
+            {
+                Console.WriteLine("D");
+
+            }
+            else if (rättSvar < 46)
+            {
+                Console.WriteLine("C");
+
+            }
+            else if (rättSvar < 55)
+            {
+                Console.WriteLine("B");
+            }
+            else
+            {
+                Console.WriteLine("Grattis! Du fick ett A!");
+            }
+
+
+
+
+
+
+        }
+
+        static void ÅlderMånadselön()
         {
             /*
                Skapa ett program som frågar användaren efter hens ålder och månadslön. 
@@ -122,7 +175,7 @@
             }
         }
 
-        static void KafeÖvning() 
+        static void KafeÖvning()
         {
             /*
             Ett kafé utlyser en kampanj där personer äldre än 65 år 
@@ -144,6 +197,8 @@
                 Console.WriteLine("Ni får köpa dyyyyrt");
             }
         }//hjälp med && och ||
-    }
-
+    } // gjorde åt fel håll först, och svårt att veta om <>=
 }
+
+
+
