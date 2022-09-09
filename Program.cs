@@ -138,6 +138,11 @@
               Programmet ska sedan säga om användaren är lika gammal som, yngre eller äldre än medelpersonen i Göteborg. 
               Därefter ska programmet säga om användaren tjänar lika mycket som, 
               mindre eller mer än meddellönen i Sverige.
+
+               Operator	    Hela uttrycket är sant om...
+                x && y	    Både de booleska uttrycken är sanna.
+                x || y	    Minst ett av de booleska uttrycken är sant.
+
                */
 
             Console.WriteLine("Hej! skriv in din ålder: ");
@@ -173,6 +178,46 @@
             {
                 Console.WriteLine("Du är äldre än medelåldern i göteborg, börjar bli gammal nu...");
             }
+        }
+
+        static void Bergochdalbana() 
+        {
+            /*
+            För att få åka en viss berg-och-dalbana på en nöjespark 
+            så måste man vara mellan 1,5 och 1,9 meter lång. 
+            Skapa ett program som frågar användaren hur lång hen är och 
+            sedan skriver ut om hen får åka berg-och-dalbanan eller inte.
+
+            A    Op   B Resultat
+         ----------------------------
+            True  &&  True True
+            True  &&  False False
+            True  ||  True True
+            True  ||  False True
+            False &&  False True
+            False &&  True False
+            False ||  False False
+            False ||  True True
+         ----------------------------
+             True ! False
+            False ! True
+         ----------------------------
+
+             */
+
+            Console.WriteLine("Välkommen till Balder, för att åka måste du vara mellan 150cm och 190cm lång");
+            Console.WriteLine("Hur lång är du? (i cm)");
+            int length = int.Parse(Console.ReadLine());
+
+            if (length > 150 && length < 190)
+            {
+                Console.WriteLine("Varsågod att åka");
+            }
+            else
+            {
+                Console.WriteLine("du får inte vara med!");
+            }
+
         }
 
         static void KafeÖvning()
