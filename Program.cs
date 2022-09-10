@@ -180,6 +180,43 @@
             }
         }
 
+        static void Flygplan()
+        {
+            /*
+             Vi ska se hur flera booleska uttryck kan användas med hjälp av ett exempel. 
+            Ett flygbolag ska släppa på passagera på ett flygplan 
+            men har bestämt sig för att låta passagerarna stiga ombord på planet i en lite annorlunda ordning. 
+            Detta är ordningen som flygbolaget har bestämt sig för:
+
+            Alla som heter Felicia och Felix eftersom de har namnsdag.
+            Alla som är äldre än 75 år.
+            Alla som är från 18 t.o.m 25 år.
+            Övriga passagerare.
+             */
+
+            Console.WriteLine("Vad heter du?: ");
+            string name = Console.ReadLine();
+
+            Console.WriteLine("Hur gammal är du?: ");
+            int age = int.Parse(Console.ReadLine());
+
+            if (name == "Felicia" || name == "Felix")
+            {
+                Console.WriteLine("Välkommen om bord i grupp ett, ni har namnsdag idag! ");
+            }
+            else if (age > 75)
+            {
+                Console.WriteLine("Seniorer välkomna ombord i grupp två");
+            }
+            else if (age >= 18 && age <= 25)
+            {
+                Console.WriteLine("Unga vuxna får gå ombord i grupp tre.");
+            }
+            else
+            {
+                Console.WriteLine("Du är välkommen ombord i grupp fyra.");
+            }
+
         static void Bergochdalbana() 
         {
             /*
