@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Flygplan();
+            TreOrd();
 
         }
 
@@ -275,8 +275,53 @@
             {
                 Console.WriteLine("Ni får köpa dyyyyrt");
             }
-        }//hjälp med && och ||
-    } // gjorde åt fel håll först, och svårt att veta om <>=
+        } // hjälp med && och ||  // gjorde åt fel håll först, och svårt att veta om <>=
+        
+        static void SammaOrd() 
+        {
+            Console.WriteLine("Var vänlig och skriv in två ord.");
+            string ord1 = Console.ReadLine();
+            string ord2 = Console.ReadLine();
+
+            // Finns det andra ordet i det första?
+            if (ord1.Contains(ord2))
+            {
+                Console.WriteLine($"{ord1} innehåller ordet {ord2}");
+            }
+            else
+            {
+                Console.WriteLine($"{ord1} innehåller INTE ordet {ord2}");
+            }
+            
+            // Vilket ord kommer först i bokstavsordning?
+            if (ord1.CompareTo(ord2) < 0)
+            {
+                Console.WriteLine($"{ord1} kommer före {ord2} i bokstavsordning.");
+            }
+            else if (ord1.CompareTo(ord2) == 0)  
+            {
+                Console.WriteLine("Du skrev samma ord 2 gånger.");
+            }
+            else
+            {
+                Console.WriteLine($"{ord2} kommer före {ord1} i bokstavsordning.");
+            }
+        }//Contains CompareTo
+
+        static void TreOrd() //Contains CompareTo
+        {
+            //Skapa ett program där användaren får skriva in tre olika ord på var sin rad.
+            //Programmet ska berätta om det första ordet kommer först i bokstavsordning av alla de tre orden.
+
+            Console.WriteLine("Skriv in tre ord: ");
+            string ord1 = Console.ReadLine();
+            string ord2 = Console.ReadLine();
+            string ord3 = Console.ReadLine();
+
+
+        }
+
+    }
 }
     
 
