@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            NationellaProv();
+            Flygplan();
 
         }
 
@@ -125,10 +125,6 @@
             }
 
 
-
-
-
-
         }
 
         static void ÅlderMånadselön()
@@ -216,8 +212,9 @@
             {
                 Console.WriteLine("Du är välkommen ombord i grupp fyra.");
             }
+        }
 
-        static void Bergochdalbana() 
+        static void Bergochdalbana()
         {
             /*
             För att få åka en viss berg-och-dalbana på en nöjespark 
@@ -281,6 +278,10 @@
         }//hjälp med && och ||
     } // gjorde åt fel håll först, och svårt att veta om <>=
 }
+    
+
+
+        
 
 
 
